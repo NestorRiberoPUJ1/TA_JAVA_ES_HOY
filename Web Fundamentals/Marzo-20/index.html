@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Etiqueta para crea tabla -->
+    <table style="background-color: black;">
+        <!-- Etiqueta para crear cabecera de tabla -->
+        <thead style="background-color: white;">
+           <!-- Etiqueta para crear fila -->
+            <tr>
+                <!-- Etiqueta para crear celda de titulo dentro de la fila -->
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+                <th>Columna 4</th>
+            </tr>
+        </thead>
+        <!-- Etiqueta para crear cuerpo de tabla -->
+        <tbody>
+            <tr style="background-color: white;">
+                <!-- Etiqueta para crear celda de contenido dentro de la fila -->
+                <td>Celda</td>
+                <td style="background-color: white;" colspan="2">Celda Combinada</td>
+                <td></td>
+            </tr>
+            <tr style="background-color: white;">
+                <td>Celda</td>
+                <td style="background-color: white;" rowspan="2">Celda Combinada</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="background-color: white;">
+                <td>Celda</td>
+                <td></td>
+                <td></td>
+                <td>Cell</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Etiqueta para crear division con linea visible y salto de linea -->
+    <hr>
+
+    <!-- Etiqueta para crear titulo principal  -->
+    <h1>Mi Formulario de Registro</h1>
+
+    <!-- Etiqueta para crear formulario -->
+    <form action="">
+
+        <!-- Etiqueta para crear una division que permite encapsular otras etiquetas -->
+        <div>
+            <!-- Etiqueta para crear un nombre a la entrada, for se utiliza para colocar el id de la etrada asociada -->
+            <label for="firstnameIpt">Nombre</label>
+            <!-- Etiqueta para crear una entrada de tipo texto, el name contiene el valor de como se va a identificar la entrada por el servidor, el id identifica la etiqueta para ser usada en el DOM por ejemplo el "for" del label -->
+            <input type="text" name="firstname" id="firstnameIpt">
+        </div>
+        <div>
+            <label for="lastnameIpt">Apellido</label>
+            <input type="text" name="lastname" id="lastnameIpt">
+        </div>
+        <div>
+            <label for="emailIpt">Email</label>
+            <!-- atributo "required" para hacerla obligatioria -->
+            <input type="email" name="email" id="emailIpt" required>
+        </div>
+        <div>
+            <label for="passwordIpt">Contraseña</label>
+            <input type="password" name="password" id="passwordIpt">
+        </div>
+        <div>
+            <label for="confirmPasswordIpt">Confirmar Contraseña</label>
+            <input type="password" name="confirmPassword" id="confirmPasswordIpt">
+        </div>
+        <div>
+            <label for="birthdayIpt">Cumpleaños</label>
+            <!-- Atributo max para fecha máxima a solucionar  -->
+            <input type="date" name="birthday" id="birthdayIpt" max="2024-03-20">
+        </div>
+        <div>
+            <!-- Etiqueta para crear entrada tipo radio, para un mismo grupo de entradas se utiliza el mismo name -->
+            <!-- Es necesario especificar "value" como el valor que se va a enviar -->
+            <input type="radio" name="gender" id="maleGender" value="M">
+            <label for="maleGender">Hombre</label>
+            <input type="radio" name="gender" id="femaleGender" value="F">
+            <label for="femaleGender">Mujer</label>
+        </div>
+        <div>
+            <label for="descriptionIpt">Una breve descripción de ti:</label>
+            <!-- Etiqueta para crear una entrada de area de texto -->
+            <textarea name="description" id="descriptionIpt" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="languageIpt">Lenguaje Favorito</label>
+            <!-- Etiqueta para crear un menú de selección -->
+            <select name="language" id="languageIpt">
+                <!-- opcion seleccionada y deshabilitada para dar una pista de funcion al usuario -->
+                <option value="" selected disabled>Seleccione un lenguaje</option>
+                <!-- a cada opcion se le debe especificar el valor que envía -->
+                <option value="js">Javascript</option>
+                <option value="py">Python</option>
+                <option value="java">Java</option>
+                <option value="c">C++</option>
+            </select>
+        </div>
+        <div>
+            <input type="radio" name="married" id="marriedIpt" value="married">
+            <label for="marriedIpt">casado</label>
+            <input type="radio" name="married" id="singleIpt" value="single">
+            <label for="singleIpt">soltero</label>
+        </div>
+        <!-- Etiqueta para crear una entrada de envió del formulario -->
+        <input type="submit" value="Enviar">
+        <!-- Alternativa para Etiqueta para envió del formulario -->
+        <button type="submit">REGISTRAR</button>
+
+    </form>
+</body>
+
+</html>
