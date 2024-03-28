@@ -1,0 +1,36 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body {
+    background-color: palevioletred;
+    padding: 16px;
+}
+
+#caja-verde {
+    background-color: green;
+    height: 48px;
+}
+
+#caja-naranja {
+    background-color: orangered;
+    height: 600px;
+    padding: 32px;
+}
+
+#caja-rosada {
+    background-color: lightpink;
+    height: 200px;
+    margin-bottom:32px
+}
+
+#caja-blanca {
+    background-color: white;
+    height: 400px;
+}
+
+.caja {
+    border: 4px solid black
+}
