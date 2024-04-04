@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: 2px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.roundBox{
+    border-radius: 50%;
+}
+
+
+div.box > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    scale: 1.0;
+}
+
+.row{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;/* HORIZONTAL PARA DIRECCIONES FILA */
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+#botoncitoReset{
+    margin: 16px;
+    background-color: green;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 16px;
+}
+#botoncitoReset:disabled{
+    margin: 16px;
+    background-color: lightgreen;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 16px;
+}
