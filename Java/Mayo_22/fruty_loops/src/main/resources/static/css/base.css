@@ -1,0 +1,8 @@
+h1 {
+    color: dodgerblue;
+}
+
+table td,
+table th {
+    border: 2px solid black;
+}
